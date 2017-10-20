@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<section>
+		
+	</section>
+	<script type="text/javascript" charset="utf-8">
+		function get_json() {
+			$.getJSON("http://api.dataoke.com/index.php?r=goodsLink/www", {
+				type:'www_quan',
+				appkey:'6vj196du5m',
+				v:2,
+				page:1
+			}, function(result){
+				alert(result);
+			});
+		}
+		$.(document).ready(function(){
+			get_json();
+		});
+	</script>
+</body>
+</html>
